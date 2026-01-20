@@ -1,0 +1,149 @@
+{
+  "identity": {
+    "name": "E1",
+    "role": "The Anti-AI Designer",
+    "principles": [
+      "Fusion over Imitation",
+      "Emotion First",
+      "Content is King",
+      "Zoom In",
+      "Negative Space",
+      "Contrast"
+    ]
+  },
+  "project": {
+    "name": "SUP'INTER",
+    "type": "University Management System",
+    "context": "Multi-campus Admin Dashboard",
+    "tone": "Professional, Academic, Efficient, Trustworthy, Modern"
+  },
+  "typography": {
+    "fonts": {
+      "headings": {
+        "family": "Manrope",
+        "weights": ["600", "700", "800"],
+        "usage": "Page titles, Card headers, Section titles"
+      },
+      "body": {
+        "family": "Inter",
+        "weights": ["400", "500"],
+        "usage": "Table data, Form inputs, General text"
+      },
+      "mono": {
+        "family": "JetBrains Mono",
+        "usage": "ID numbers, Matricules, Code snippets"
+      }
+    },
+    "rules": [
+      "Headings > 32px must use tracking-tight",
+      "Overlines/Labels must be Uppercase + Tiny + Wide Spacing (tracking-widest)",
+      "Line height: Tight for headers, Relaxed for body"
+    ]
+  },
+  "colors": {
+    "theme": "light",
+    "palette": {
+      "primary": {
+        "name": "Academic Navy",
+        "hex": "#0F172A",
+        "tailwind": "slate-900",
+        "usage": "Sidebar, Primary Buttons, Headings"
+      },
+      "secondary": {
+        "name": "Success Orange",
+        "hex": "#F97316",
+        "tailwind": "orange-500",
+        "usage": "Accents, Call-to-Actions, Highlights"
+      },
+      "background": {
+        "light": "#F8FAFC",
+        "dark": "#020617",
+        "usage": "Main app background (Slate-50)"
+      },
+      "surface": {
+        "light": "#FFFFFF",
+        "dark": "#0F172A",
+        "usage": "Cards, Modals, Sidebar"
+      },
+      "status": {
+        "success": "#10B981",
+        "warning": "#F59E0B",
+        "error": "#EF4444",
+        "info": "#3B82F6"
+      }
+    },
+    "gradients": {
+      "login_overlay": "linear-gradient(to right bottom, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.8))"
+    }
+  },
+  "layout": {
+    "grid_system": {
+      "dashboard": "Mode B: High Density Grid (grid-cols-1 md:grid-cols-3 lg:grid-cols-4, gap-6)",
+      "marketing": "Mode A: Tetris Grid (grid-cols-12, gap-8)"
+    },
+    "spacing": {
+      "container_padding": "p-6 md:p-8 lg:p-12",
+      "card_padding": "p-6",
+      "section_gap": "gap-8"
+    },
+    "sidebar": {
+      "width": "w-64",
+      "behavior": "Fixed left, collapsible on mobile"
+    }
+  },
+  "components": {
+    "cards": {
+      "style": "Flat background, 1px subtle border (border-slate-200), no shadow by default. Hover: shadow-md, -translate-y-1 transition-all",
+      "radius": "rounded-xl"
+    },
+    "buttons": {
+      "primary": "bg-slate-900 text-white hover:bg-slate-800 rounded-lg px-6 py-2 font-medium transition-all active:scale-95",
+      "secondary": "bg-white border border-slate-200 text-slate-900 hover:bg-slate-50 rounded-lg px-6 py-2 font-medium"
+    },
+    "inputs": {
+      "style": "bg-white border-slate-200 focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 rounded-lg h-10"
+    },
+    "tables": {
+      "style": "Clean rows, border-b border-slate-100, hover:bg-slate-50/50. Header: uppercase text-xs font-semibold text-slate-500 tracking-wider"
+    }
+  },
+  "images": {
+    "login_hero": {
+      "url": "https://images.unsplash.com/photo-1764058415544-6c5bd4659a88?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Modern University Campus",
+      "usage": "Login page split screen background"
+    },
+    "dashboard_welcome": {
+      "url": "https://images.unsplash.com/photo-1589872880544-76e896b0592c?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Students Studying",
+      "usage": "Dashboard welcome banner or widget background"
+    },
+    "placeholders": {
+      "avatar": "https://ui.shadcn.com/avatars/01.png"
+    }
+  },
+  "motion": {
+    "transitions": "transition-all duration-200 ease-in-out",
+    "hover_effects": "hover:-translate-y-0.5 hover:shadow-lg",
+    "page_transition": "initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}"
+  },
+  "universal_guidelines": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use sonner for toasts"
+  ],
+  "instructions_to_main_agent": "Follow the 'Swiss & High-Contrast' archetype. Use the 'Academic Navy' (#0F172A) as the primary anchor for the sidebar and headings. Use 'Success Orange' (#F97316) sparingly for high-impact actions. The layout must be dense but breathable (Mode B). Use the provided image URLs for the login and dashboard. Ensure all interactive elements have data-testid attributes."
+}
