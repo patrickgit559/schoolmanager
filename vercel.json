@@ -1,8 +1,5 @@
 {
   "buildCommand": "cd frontend && npm install --legacy-peer-deps && npm run build",
   "outputDirectory": "frontend/build",
-  "public": "false",
-  "env": {
-    "REACT_APP_API_URL": "@react_app_api_url"
-  }
+  "public": false
 }
