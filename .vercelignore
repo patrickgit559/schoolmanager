@@ -1,0 +1,11 @@
+backend
+node_modules
+__pycache__
+.git
+.pytest_cache
+tests
+memory
+test_reports
+.env
+.env.local
+.vercel
